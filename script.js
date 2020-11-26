@@ -15,6 +15,16 @@ addEventListener('mousemove', e => {
     mouse.y = e.clientY;
 });
 
+addEventListener('touchmove',(e)=>{
+    mouse.x = e.touches[0].clientX;
+    mouse.y = e.touches[0].clientY;
+})
+
+addEventListener('touchstart',(e)=>{
+    mouse.x = e.touches[0].clientX;
+    mouse.y = e.touches[0].clientY;
+})
+
 addEventListener('resize', () => {
     canvas.width = innerWidth;
     canvas.height = innerHeight;
